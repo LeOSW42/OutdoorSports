@@ -1,14 +1,22 @@
-$( "#copyleft" ).stop().hover(function() {
+var avancement = "1%";
+
+$( "#copyleft" ).hover(function() {
 	$( "#copyleft" ).animate({opacity: 0.8}, 'fast');
 });
 
-$( "#copyleft" ).stop().mouseleave(function() {
+$( "#copyleft" ).mouseleave(function() {
 	$( "#copyleft" ).animate({opacity: 0.4}, 'fast');
 });
 
-$( "#copyleft" ).stop().click(function() {
+$( "#copyleft" ).click(function() {
 	$( "#overlay" ).fadeIn();
 });
+
+$( document ).ready(function() {
+	$( ".meter-value" ).animate({width: avancement}, 'slow');
+	$( ".avancement" ).text(avancement);
+});
+
 
 $('#overlay').on('click', function (e) {
     var $parent = $('#overlay'),
@@ -19,6 +27,6 @@ $('#overlay').on('click', function (e) {
     }
 });
 
-$( document.body ).stop().keypress(function() {
+$( document.body ).keypress(function() {
 	$( "#overlay" ).fadeOut('fast');
 });
