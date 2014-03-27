@@ -34,21 +34,29 @@ if ($flag == 0 || $page->url_array == NULL) {
 
 // Switching between each 
 switch ($page->url_array[0]) {
-    case "home":
-    	$page->theme = "orange";
-    	break;
+	case "home":
+		$page->theme = "orange";
+		$page->template = "home";
+		break;
 	case "guides":
 		$page->theme = "dark";
+		$page->template = "guides";
 		break;
 	case "shelters":
 		$page->theme = "purple";
+		$page->template = "shelters";
 		break;
-    case "carpooling":
+	case "carpooling":
 		$page->theme = "blue";
+		$page->template = "carpooling";
 		break;
 	default:
-    	$page->theme = "orange";
-    break;
+		$page->theme = "orange";
+		$page->template = "home";
+	break;
 }
+
+include("templates/".$page->template.".php");
+include("include/create_page.php");
 
 ?>
