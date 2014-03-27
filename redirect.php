@@ -53,10 +53,16 @@ switch ($page->url_array[0]) {
 	default:
 		$page->theme = "orange";
 		$page->template = "home";
+		$page->title = "Erreur 404";
 	break;
 }
 
 include("templates/".$page->template.".php");
 include("include/create_page.php");
+
+html_header($page->theme, $page->title);
+// header($theme, $title);
+// nav($theme, $title);
+// footer($theme, $title);
 
 ?>
