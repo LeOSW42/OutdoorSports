@@ -38,18 +38,18 @@ switch ($page->url_array[0]) {
 		$page->theme = "orange";
 		$page->template = "home";
 		break;
-	case "guides":
-		$page->theme = "dark";
-		$page->template = "guides";
-		break;
-	case "shelters":
-		$page->theme = "purple";
-		$page->template = "shelters";
-		break;
-	case "carpooling":
-		$page->theme = "blue";
-		$page->template = "carpooling";
-		break;
+	// case "guides":
+	// 	$page->theme = "dark";
+	// 	$page->template = "guides";
+	// 	break;
+	// case "shelters":
+	// 	$page->theme = "purple";
+	// 	$page->template = "shelters";
+	// 	break;
+	// case "carpooling":
+	// 	$page->theme = "blue";
+	// 	$page->template = "carpooling";
+	// 	break;
 	default:
 		$page->theme = "orange";
 		$page->template = "home";
@@ -60,9 +60,10 @@ switch ($page->url_array[0]) {
 include("templates/".$page->template.".php");
 include("include/create_page.php");
 
-html_header($page->theme, $page->title);
-// header($theme, $title);
-// nav($theme, $title);
-// footer($theme, $title);
+html_head($page->theme, $page->template, $page->title);
+site_header($page->theme, $page->title);
+site_nav($page->theme, $page->title);
+site_footer($page->theme, $page->title);
+html_end();
 
 ?>

@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#wrapper {
+	width: 94%;
+	margin: 0 auto;
+}
+
+header {
+	border: 1px solid red;
+	height: 110px;
+}
+
+nav {
+	border: 1px solid blue;
+	height: 26px;
+	width: 110%;
+	margin: -14px 0 0 -5%;
+	transform: rotate(-1deg);
+	position: absolute;
+}
+
+footer {
+	border: 1px solid green;
+	height: 50px;
+}
