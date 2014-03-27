@@ -31,8 +31,24 @@ if ($flag == 0 || $page->url_array == NULL) {
 	$page->url_array[0] = "home";
 }
 
-switch ($page->url_array[0]) {
 
+// Switching between each 
+switch ($page->url_array[0]) {
+    case "home":
+    	$page->theme = "orange";
+    	break;
+	case "guides":
+		$page->theme = "dark";
+		break;
+	case "shelters":
+		$page->theme = "purple";
+		break;
+    case "carpooling":
+		$page->theme = "blue";
+		break;
+	default:
+    	$page->theme = "orange";
+    break;
 }
 
 ?>
