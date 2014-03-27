@@ -8,7 +8,7 @@ if(!isset($page->title)) {
 
 function html_head_home()
 {
-	echo "    <script src='../share/js/jquery-1.11.0.min.js'></script>\r\n";
+	echo "    <script src='share/js/jquery-1.11.0.min.js'></script>\r\n";
 }
 
 ?>
