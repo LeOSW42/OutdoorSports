@@ -32,6 +32,10 @@ function site_header($theme, $title)
 function site_nav($theme, $title)
 {
 	echo "         <nav>\r\n";
+	echo "             <ul>\r\n";
+	echo "                 <li>Home</li>\r\n";
+	echo "                 <li>Guides</li>\r\n";
+	echo "             </ul>\r\n";
 	echo "         </nav>\r\n";
 }
 
