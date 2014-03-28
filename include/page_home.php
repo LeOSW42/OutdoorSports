@@ -43,12 +43,12 @@ Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis cas
 
 <div id="home_credits">
 	<p>Powered by</p>
-	<img class="powered" src="share/img/php.png">
-	<img class="powered" src="share/img/sublime_text.png">
-	<img class="powered" src="share/img/arch_linux.png">
-	<img class="powered" src="share/img/firefox.png">
-	<img class="powered" src="share/img/html5.png">
-	<img class="powered" src="share/img/css3.png">
-	<img class="powered" src="share/img/jquery.png">
+	<img class="powered" src="share/img/php.png" alt="php"/>
+	<img class="powered" src="share/img/sublime_text.png" alt="sublime text"/>
+	<img class="powered" src="share/img/arch_linux.png" alt="arch linux"/>
+	<img class="powered" src="share/img/firefox.png" alt="firefox"/>
+	<img class="powered" src="share/img/html5.png" alt="html5"/>
+	<img class="powered" src="share/img/css3.png" alt="css3"/>
+	<img class="powered" src="share/img/jquery.png" alt="jquery"/>
 </div>
 

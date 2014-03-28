@@ -13,8 +13,8 @@ function html_head($theme, $template, $title)
 		$head_specific_to_page($title);
 	}
 	echo "    <title>".$title." — Outdoor Sports</title>\r\n";
-	echo "    <link rel='stylesheet' type='text/css' media='screen' href='share/css/common.css' />\r\n";
-	echo "    <link rel='stylesheet' type='text/css' media='screen' href='share/css/".$theme.".css' />\r\n";
+	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/common.css' />\r\n";
+	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/".$theme.".css' />\r\n";
 	echo "    <!--[if IE]>\r\n";
 	echo "    <script src='share/jscript/html5.js'></script>\r\n";
 	echo "    <![endif]-->\r\n";
@@ -66,7 +66,7 @@ function site_footer($theme, $title)
             <h2>Code Source :</h2>
             <p>Le code source est disponible à l'adresse suivante : <a href="https://github.com/LeOSW42/OutdoorSports">https://github.com/LeOSW42/OutdoorSports</a></p>
             <h2>Licence :</h2>
-            <p>Le code source est sous licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC-BY-SA 4.0</a>.</i></p>
+            <p>Le code source est sous licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC-BY-SA 4.0</a>.</p>
         </div>
     </div>
              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 980" id="copyleft"><circle cx="490" cy="490" r="440" fill="none" stroke="#000" stroke-width="100"/><path d="M486,215C356,215 247,306 219,428L350,428C374,376 426,340 486,340C569,340 636,407 636,490C636,573 569,640 486,640C426,640 374,604 350,553L219,553C247,674 356,765 486,765C638,765 761,642 761,490C761,338 638,215 486,215z"/></svg>
