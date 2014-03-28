@@ -26,11 +26,10 @@ foreach ($page->url_array as $cell) {
 	}
 }
 // Test to redirect "", "?toto" URLs to the homepage
-if ($flag == 0 || $page->url_array == NULL) {
+if ($flag == 0 || $page->url_array == NULL || $page->url_array[0] == "") {
 	unset($page->url_array);
-	$page->url_array[0] = "home";
+	header('Location: '.$_SERVER["SCRIPT_NAME"].'?/home');
 }
-
 
 // Switching between each 
 switch ($page->url_array[0]) {
