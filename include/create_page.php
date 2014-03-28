@@ -25,8 +25,13 @@ function html_head($theme, $template, $title)
 
 function site_header($theme, $title)
 {
-	echo "         <header>\r\n";
-	echo "         </header>\r\n";
+	echo "         <header>\r\n"; ?>
+
+	<img id="mount1" src="share/img/mount1.svg" alt="Mountain header"/>
+	<img id="mount2" src="share/img/mount2.svg" alt="Mountain header"/>
+	<img id="mount3" src="share/img/mount3.svg" alt="Mountain header"/>
+
+<?php	echo "         </header>\r\n";
 }
 
 function site_nav($theme, $title)

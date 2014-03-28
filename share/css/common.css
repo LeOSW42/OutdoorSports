@@ -22,6 +22,14 @@ header {
 	height: 110px;
 }
 
+header img {
+	height: 150px;
+	float: right;
+}
+
+#mount1 {
+}
+
 nav {
 	border-bottom: 4px solid #777;
 	border-top: 1px solid #777;

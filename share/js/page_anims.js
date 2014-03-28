@@ -3,7 +3,7 @@ var headerPresent = 1;
 $( document ).ready(function() {
 	$('#arrow').click(function() {
 		if (headerPresent==1) {
-			$( "header" ).animate({height: 0}, 300);
+			$('header').slideToggle(500)
 			$( "nav" ).animate({marginTop: 0}, 300);
 			$( "nav" ).rotate({
 				duration:300,
@@ -17,7 +17,7 @@ $( document ).ready(function() {
 			headerPresent = 0;
 		}
 		else {
-			$( "header" ).animate({height: 110}, 300);
+			$('header').slideToggle(500)
 			$( "nav" ).animate({marginTop: "-14px"}, 300);
 			$( "nav" ).rotate({
 				duration:300,
