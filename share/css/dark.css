@@ -49,3 +49,16 @@ footer {
 	border-top: 1px solid #454545;
 	background: #333;
 }
+
+@media screen and (max-width: 500px) {
+	nav li {
+		border-top: 1px solid #bbb;
+		border-left: none;
+	}
+	nav li:first-child {
+		border-top: none;
+	}
+	nav li:hover {
+		padding-bottom: 0;
+	}
+}

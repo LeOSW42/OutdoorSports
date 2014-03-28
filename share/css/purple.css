@@ -1,11 +1,11 @@
 *::selection {
-    background: orange;
+    background: purple;
     color:white;
     text-shadow: none;
 }
 
 *::-moz-selection {
-    background: orange;
+    background: purple;
     color:white;
     text-shadow: none;
 }
@@ -35,7 +35,7 @@ nav li {
 }
 
 nav li:hover {
-	border-bottom: 4px solid orange;
+	border-bottom: 4px solid purple;
 }
 
 footer {
