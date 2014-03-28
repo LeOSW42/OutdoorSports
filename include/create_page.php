@@ -27,9 +27,9 @@ function site_header($theme, $title)
 {
 	echo "         <header>\r\n";
 	echo "             <p>Outdoor Sports</p>\r\n";
-	echo "             <img id='mount1' src='share/img/mount1.svg' alt='Mountain header'/>";
-	echo "             <img id='mount2' src='share/img/mount2.svg' alt='Mountain header'/>";
-	echo "             <img id='mount3' src='share/img/mount3.svg' alt='Mountain header'/>";
+	echo "             <img id='mount1' src='share/img/mount1.svg' alt='Mountain header'/>\r\n";
+	echo "             <img id='mount2' src='share/img/mount2.svg' alt='Mountain header'/>\r\n";
+	echo "             <img id='mount3' src='share/img/mount3.svg' alt='Mountain header'/>\r\n";
 	echo "         </header>\r\n";
 }
 
