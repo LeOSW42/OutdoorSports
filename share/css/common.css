@@ -62,7 +62,19 @@ nav li:first-child {
 
 nav li:hover {
 	border-bottom: 4px solid orange;
+}
 
+nav #arrow {
+	float: right;
+	border-left: none;
+	height: 18px;
+	width: 18px;
+	transform: rotate(180deg);
+	cursor: pointer;
+}
+
+nav #arrow:hover {
+	border-bottom: none;
 }
 
 footer {
