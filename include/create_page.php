@@ -8,6 +8,7 @@ function html_head($theme, $template, $title)
 	echo "<html>\r\n";
 	echo "<head>\r\n";
 	echo "    <meta charset='utf-8' />\r\n";
+	echo "    <meta name='viewport' content='width=device-width, height=device-height'>\r\n";
 	$head_specific_to_page = "html_head_".$template;
 	if (function_exists($head_specific_to_page)) {
 		$head_specific_to_page($title);
