@@ -1,22 +1,22 @@
 *::selection {
-    background: orange;
+    background: green;
     color:white;
     text-shadow: none;
 }
 
 *::-moz-selection {
-    background: orange;
+    background: green;
     color:white;
     text-shadow: none;
 }
 
 html, body {
-	background: #777;
+	background: #555;
 	color: #c1c1c1;
 }
 
 #wrapper {
-	box-shadow: 0 0 25px white;
+	box-shadow: 0 0 25px #999;
 	background: #212121;
 }
 
@@ -38,7 +38,7 @@ nav li {
 }
 
 nav li:hover {
-	border-bottom: 4px solid orange;
+	border-bottom: 4px solid green;
 }
 
 #arrow {
