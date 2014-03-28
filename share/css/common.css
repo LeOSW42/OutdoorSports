@@ -81,13 +81,88 @@ nav #arrow:hover {
 	border-bottom: none;
 }
 
-nav a {
+a {
 	color: inherit;
 	text-decoration: none;
 }
 
 footer {
-	height: 50px;
+	height: 30px;
 	position: absolute;
 	bottom: 0;
+	width: 94%;
+	padding: 5px 0;
+	text-align: center;
+	font-weight: lighter;
+}
+
+footer #copyleft {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    opacity: 0.4;
+    background: #c1c1c1;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+footer #overlay {
+	text-align: left;
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(150, 150, 150, 0.75);
+    display: none;
+    z-index: 10;
+    box-shadow: inset 0 0 1000px rgba(0,0,0,0.4);
+}
+
+footer #overlay #overlaycontent {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color:  rgba(200, 200, 200, 0.75);
+    box-shadow: 0 0 15px rgba(100, 100, 100, 0.75);
+    color: black;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 1.1em;
+    overflow: hidden;
+    z-index: 15;
+    padding: -1px;
+    border: 1px solid #c1c1c1;
+}
+
+footer #overlay #overlaycontent:hover {
+    overflow: auto;
+}
+
+footer #overlay h2 {
+    font-size: 1.15em;
+    padding: 5px 15px;
+    text-shadow: 1px 1px #ccc;
+    background: #999;
+    box-shadow: inset 0 0 10px #aaa, inset 0 0 1px white, 0 0 1px  #454545;
+    margin: 0 0 10px 0;
+    font-weight: 550;
+}
+
+footer #overlay p {
+    font-size: 0.8em;
+    padding: 0 25px;
+    margin: 0 0 25px 0;
+}
+
+footer #overlay ul {
+    font-size: 0.8em;
+    padding: 0 25px;
+    margin: 0 0 25px 25px;
 }

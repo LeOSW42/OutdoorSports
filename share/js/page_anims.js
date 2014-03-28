@@ -42,12 +42,38 @@ $( document ).ready(function() {
 		};
 	});
 
-
+// That makes the 3 mountains moving on the header
 	$("header").bind('mousemove',function(e){ 
 		var p = $( "header" );
 		var width = $("header").width();
 		var position = p.position();
 		var mousePos = (e.pageX - position.left)*100 / width;
 	 	$("header img").css({marginLeft: -mousePos/15+"%"});
-	}); 
+	});
+
+// That animates the copyleft logo (on hover) and create the overlay
+	$( "#copyleft" ).hover(function() {
+		$( "#copyleft" ).animate({opacity: 0.8}, 'fast');
+	});
+
+	$( "#copyleft" ).mouseleave(function() {
+		$( "#copyleft" ).animate({opacity: 0.4}, 'fast');
+	});
+
+	$( "#copyleft" ).click(function() {
+		$( "#overlay" ).fadeIn();
+	});
+
+	$('#overlay').on('click', function (e) {
+	    var $parent = $('#overlay'),
+	        $eventTarget = $(e.target);
+	    
+	    if ($parent.has($eventTarget).length === 0) {
+	        $( "#overlay" ).fadeOut('fast');
+	    }
+	});
+
+	$( document.body ).keypress(function() {
+		$( "#overlay" ).fadeOut('fast');
+	});
 });

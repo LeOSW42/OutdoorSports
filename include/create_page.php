@@ -12,7 +12,7 @@ function html_head($theme, $template, $title)
 	if (function_exists($head_specific_to_page)) {
 		$head_specific_to_page($title);
 	}
-	echo "    <title>Outdoor Sports — ".$title."</title>\r\n";
+	echo "    <title>".$title." — Outdoor Sports</title>\r\n";
 	echo "    <link rel='stylesheet' type='text/css' media='screen' href='share/css/common.css' />\r\n";
 	echo "    <link rel='stylesheet' type='text/css' media='screen' href='share/css/".$theme.".css' />\r\n";
 	echo "    <!--[if IE]>\r\n";
@@ -31,10 +31,12 @@ function site_header($theme, $title)
 	echo "             <img id='mount2' src='share/img/mount2.svg' alt='Mountain header'/>\r\n";
 	echo "             <img id='mount3' src='share/img/mount3.svg' alt='Mountain header'/>\r\n";
 	echo "         </header>\r\n";
+	echo "         <section id='content'>\r\n";
 }
 
 function site_nav($theme, $title)
 {
+	echo "         </section>\r\n";
 	echo "         <nav>\r\n";
 	echo "             <ul>\r\n";
 	echo "                 <li><a href='?/home'>Accueil</a></li>\r\n";
@@ -48,8 +50,28 @@ function site_nav($theme, $title)
 
 function site_footer($theme, $title)
 {
-	echo "         <footer>\r\n";
-	echo "         </footer>\r\n";
+	echo "         <footer>\r\n"; ?>
+    <div id="overlay">
+        <div id="overlaycontent">
+            <h2>Description :</h2>
+            <p>Outdoor Sport l'espace web dédié aux amateurs de sports outdoor. Guides, covoiturage et informations sur les refuges y sont publiés.</p>
+            <h2>Auteurs :</h2>
+            <ul><li>Léo Serre</li></ul>
+            <h2>Crédits :</h2>
+            <ul><li>jQuery - <a href="https://jquery.org/license/">MIT License</a> - <a href="https://jquery.org/">Website</a></li>
+            <li>jQuery Rotate - <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a> - <a href="http://code.google.com/p/jqueryrotate/">Website</a></li>
+            <li>Mountains - Public domain - <a href="http://nicubunu.ro/">Nicubunu</a></li>
+            <li>Grey texture - <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> - <a href="http://www.mentalwarddesign.com/">Stefan Aleksić</a></li>
+            <li>Arrow - <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> - <a href="http://www.picol.org/">PICOL</a></li></ul>
+            <h2>Code Source :</h2>
+            <p>Le code source est disponible à l'adresse suivante : <a href="https://github.com/LeOSW42/OutdoorSports">https://github.com/LeOSW42/OutdoorSports</a></p>
+            <h2>Licence :</h2>
+            <p>Le code source est sous licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC-BY-SA 4.0</a>.</i></p>
+        </div>
+    </div>
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 980" id="copyleft"><circle cx="490" cy="490" r="440" fill="none" stroke="#000" stroke-width="100"/><path d="M486,215C356,215 247,306 219,428L350,428C374,376 426,340 486,340C569,340 636,407 636,490C636,573 569,640 486,640C426,640 374,604 350,553L219,553C247,674 356,765 486,765C638,765 761,642 761,490C761,338 638,215 486,215z"/></svg>
+             <p><a href="?/home/term-of-use">Mentions légales</a> — <a href="?/home/contact">Contact</a> — <a href="?/home/map">Plan du site</a></p>
+	<?php echo "         </footer>\r\n";
 }
 
 function html_end()

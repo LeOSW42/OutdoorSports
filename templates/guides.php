@@ -13,4 +13,14 @@ function html_head_guides()
 	echo "    <script type='text/javascript' src='share/js/page_anims.js'></script>\r\n";
 }
 
+function site_content($page1, $page2)
+{
+	switch ($page1) {
+		case NULL:
+			break;
+		default:
+			break;
+	}
+}
+
 ?>
