@@ -64,8 +64,8 @@ if (!isset($page->url_array[1])) { $page->url_array[1] = NULL; }
 if (!isset($page->url_array[2])) { $page->url_array[2] = NULL; }
 html_head($page->theme, $page->template, $page->title);
 site_header($page->theme, $page->title);
-site_content($page->url_array[1],$page->url_array[2]);
 site_nav($page->theme, $page->title);
+site_content($page->url_array[1],$page->url_array[2]);
 site_footer($page->theme, $page->title);
 html_end();
 

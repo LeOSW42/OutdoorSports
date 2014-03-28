@@ -31,12 +31,10 @@ function site_header($theme, $title)
 	echo "             <img id='mount2' src='share/img/mount2.svg' alt='Mountain header'/>\r\n";
 	echo "             <img id='mount3' src='share/img/mount3.svg' alt='Mountain header'/>\r\n";
 	echo "         </header>\r\n";
-	echo "         <section id='content'>\r\n";
 }
 
 function site_nav($theme, $title)
 {
-	echo "         </section>\r\n";
 	echo "         <nav>\r\n";
 	echo "             <ul>\r\n";
 	echo "                 <li><a href='?/home'>Accueil</a></li>\r\n";
@@ -46,10 +44,12 @@ function site_nav($theme, $title)
 	echo "                 <li id='arrow'><svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><g><rect fill='none' height='32' width='32'/></g><g><polygon points='2.002,10 16.001,24 30.002,10'/></g></svg></li>\r\n";
 	echo "             </ul>\r\n";
 	echo "         </nav>\r\n";
+	echo "         <section id='content'>\r\n";
 }
 
 function site_footer($theme, $title)
 {
+	echo "         </section>\r\n";
 	echo "         <footer>\r\n"; ?>
     <div id="overlay">
         <div id="overlaycontent">

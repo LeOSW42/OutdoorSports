@@ -17,6 +17,7 @@ function site_content($page1, $page2)
 {
 	switch ($page1) {
 		case NULL:
+			include("include/page_home.php");
 			break;
 		case "404":
 			break;
