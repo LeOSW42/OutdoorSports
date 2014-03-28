@@ -21,10 +21,18 @@ $( document ).ready(function() {
 			$('header').slideToggle(300)
 			$('header p').slideToggle(300)
 			$( "nav" ).animate({marginTop: "-14px"}, 300);
-			$( "nav" ).rotate({
-				duration:300,
-	 			animateTo:-1
-			});
+			if ($(document).width()>1400) {
+				$( "nav" ).rotate({
+					duration:300,
+		 			animateTo:-0.5
+				});
+			}
+			else {
+				$( "nav" ).rotate({
+					duration:300,
+		 			animateTo:-1
+				});
+			};
 			$( "#arrow" ).rotate({
 				duration:300,
 				angle: 0,
