@@ -204,7 +204,7 @@ footer #overlay ul {
 		display: none;
 	}
 	nav {
-		transform: rotate(0deg);
+		transform: rotate(0deg) !important;
 	}
 	#wrapper {
 		width: 100%;

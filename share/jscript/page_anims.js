@@ -15,6 +15,7 @@ $( document ).ready(function() {
 				angle: 180,
 	 			animateTo:0
 			});
+			$('nav').css({position: "fixed"});
 			headerPresent = 0;
 		}
 		else {
@@ -38,6 +39,7 @@ $( document ).ready(function() {
 				angle: 0,
 	 			animateTo:180
 			});
+			$('nav').css({position: "absolute"});
 			headerPresent = 1;
 		};
 	});
