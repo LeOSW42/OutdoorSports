@@ -33,4 +33,13 @@ $( document ).ready(function() {
 			headerPresent = 1;
 		};
 	});
+
+
+	$("header").bind('mousemove',function(e){ 
+		var p = $( "header" );
+		var width = $("header").width();
+		var position = p.position();
+		var mousePos = (e.pageX - position.left)*100 / width;
+	 	$("header img").css({marginLeft: -mousePos/15+"%"});
+	}); 
 });
