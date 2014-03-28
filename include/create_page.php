@@ -25,23 +25,22 @@ function html_head($theme, $template, $title)
 
 function site_header($theme, $title)
 {
-	echo "         <header>\r\n"; ?>
-
-	<img id="mount1" src="share/img/mount1.svg" alt="Mountain header"/>
-	<img id="mount2" src="share/img/mount2.svg" alt="Mountain header"/>
-	<img id="mount3" src="share/img/mount3.svg" alt="Mountain header"/>
-
-<?php	echo "         </header>\r\n";
+	echo "         <header>\r\n";
+	echo "             <p>Outdoor Sports</p>\r\n";
+	echo "             <img id='mount1' src='share/img/mount1.svg' alt='Mountain header'/>";
+	echo "             <img id='mount2' src='share/img/mount2.svg' alt='Mountain header'/>";
+	echo "             <img id='mount3' src='share/img/mount3.svg' alt='Mountain header'/>";
+	echo "         </header>\r\n";
 }
 
 function site_nav($theme, $title)
 {
 	echo "         <nav>\r\n";
 	echo "             <ul>\r\n";
-	echo "                 <li>Accueil</li>\r\n";
-	echo "                 <li>Randonnées</li>\r\n";
-	echo "                 <li>Refuges</li>\r\n";
-	echo "                 <li>Covoiturage</li>\r\n";
+	echo "                 <li><a href='?/home'>Accueil</a></li>\r\n";
+	echo "                 <li><a href='?/guides'>Randonnées</a></li>\r\n";
+	echo "                 <li><a href='?/shelters'>Refuges</a></li>\r\n";
+	echo "                 <li><a href='?/carpooling'>Covoiturage</a></li>\r\n";
 	echo "                 <li id='arrow'><svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><g><rect fill='none' height='32' width='32'/></g><g><polygon points='2.002,10 16.001,24 30.002,10'/></g></svg></li>\r\n";
 	echo "             </ul>\r\n";
 	echo "         </nav>\r\n";

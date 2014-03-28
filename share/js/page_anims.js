@@ -4,6 +4,7 @@ $( document ).ready(function() {
 	$('#arrow').click(function() {
 		if (headerPresent==1) {
 			$('header').slideToggle(500)
+			$('header p').animate({fontSize: 0}, 300)
 			$( "nav" ).animate({marginTop: 0}, 300);
 			$( "nav" ).rotate({
 				duration:300,
@@ -18,6 +19,7 @@ $( document ).ready(function() {
 		}
 		else {
 			$('header').slideToggle(500)
+			$('header p').animate({fontSize: "3.2em"}, 300)
 			$( "nav" ).animate({marginTop: "-14px"}, 300);
 			$( "nav" ).rotate({
 				duration:300,
