@@ -6,7 +6,6 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	background: #ddd;
 	font-family: Open Sans, Liberation Sans, DejaVu Sans, sans;
 }
 
@@ -14,8 +13,6 @@ html, body {
 	width: 94%;
 	margin: 0 auto;
 	height: 100%;
-	box-shadow: 0 0 25px black;
-	background: white;
 }
 
 header {
@@ -29,7 +26,6 @@ header p {
 	margin-left: 15px;
 	font-size: 3.2em;
 	font-weight: lighter;
-	text-shadow: 0 0 15px white, 0 0 10px white, 0 0 5px white, 0 0 15px white, 0 0 10px white, 0 0 5px white, 0 0 15px white, 0 0 10px white, 0 0 5px white, 0 0 15px white, 0 0 10px white, 0 0 5px white, 0 0 15px white, 0 0 10px white, 0 0 5px white;
 }
 
 header img {
@@ -38,18 +34,12 @@ header img {
 	margin: -10px 0 0 0;
 }
 
-#mount1 {
-}
-
 nav {
-	border-bottom: 4px solid #777;
-	border-top: 1px solid #777;
 	height: 26px;
 	width: 100%;
 	margin: -14px 0 0 0;
 	right: 0;
 	transform: rotate(-1deg);
-	background: #999;
 	position: absolute;
 }
 @media screen and (min-width: 1400px) {
@@ -71,16 +61,11 @@ nav li {
 	height: 18px;
 	padding: 4px 10px;
 	float: left;
-	border-left: 1px solid #bbb;
 	font-weight: 600;
 }
 
 nav li:first-child {
 	border-left: none;
-}
-
-nav li:hover {
-	border-bottom: 4px solid orange;
 }
 
 nav #arrow {
