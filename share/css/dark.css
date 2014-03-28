@@ -1,0 +1,46 @@
+*::selection {
+    background: orange;
+    color:white;
+    text-shadow: none;
+}
+
+*::-moz-selection {
+    background: orange;
+    color:white;
+    text-shadow: none;
+}
+
+html, body {
+	background: #777;
+	color: #c1c1c1;
+}
+
+#wrapper {
+	box-shadow: 0 0 25px white;
+	background: #212121;
+}
+
+header p {
+	color: white;
+	text-shadow: 0 0 15px #151515, 0 0 10px #151515, 0 0 5px #151515, 0 0 15px #151515, 0 0 10px #151515, 0 0 5px #151515, 0 0 15px #151515, 0 0 10px #151515, 0 0 5px #151515, 0 0 15px #151515, 0 0 10px #151515, 0 0 5px #151515, 0 0 15px #151515, 0 0 10px #151515, 0 0 5px #151515;
+}
+
+nav {
+	color: #c1c1c1;
+	border-bottom: 4px solid #454545;
+	border-top: 1px solid #454545;
+	background: #111;
+}
+
+nav li {
+	border-left: 1px solid #bbb;
+	text-shadow: 1px 1px 0 #222;
+}
+
+nav li:hover {
+	border-bottom: 4px solid orange;
+}
+
+#arrow {
+    fill: #c1c1c1;
+}
