@@ -16,7 +16,7 @@ function html_head($theme, $template, $title)
 	echo "    <link rel='stylesheet' type='text/css' media='screen' href='share/css/common.css' />\r\n";
 	echo "    <link rel='stylesheet' type='text/css' media='screen' href='share/css/".$theme.".css' />\r\n";
 	echo "    <!--[if IE]>\r\n";
-	echo "    <script src='share/js/html5.js'></script>\r\n";
+	echo "    <script src='share/jscript/html5.js'></script>\r\n";
 	echo "    <![endif]-->\r\n";
 	echo "</head>\r\n";
 	echo "<body>\r\n";
