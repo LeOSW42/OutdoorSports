@@ -52,7 +52,6 @@ switch ($page->url_array[0]) {
 	default:
 		$page->theme = "orange";
 		$page->template = "home";
-		$page->title = "Erreur 404";
 		$page->url_array[1] = "404";
 	break;
 }
@@ -62,7 +61,7 @@ include("include/create_page.php");
 
 if (!isset($page->url_array[1])) { $page->url_array[1] = NULL; }
 if (!isset($page->url_array[2])) { $page->url_array[2] = NULL; }
-html_head($page->theme, $page->template, $page->title);
+html_head($page->theme, $page->template, $page->title, $page->url_array[1],$page->url_array[2]);
 site_header($page->theme, $page->title);
 site_nav($page->theme, $page->title);
 site_content($page->url_array[1],$page->url_array[2]);

@@ -1,0 +1,20 @@
+#svg_404 {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 170px;
+}
+
+section h1, section p {
+	margin-right: 170px;
+}
+
+@media screen and (max-width: 500px) {
+	#svg_404 {
+		top: 110px;
+		width: 100px;
+	}
+	section h1, section p {
+		margin-right: 100px;
+	}
+}
