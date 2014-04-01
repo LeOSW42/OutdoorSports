@@ -48,6 +48,10 @@ nav {
 	margin: -14px 0 0 0;
 	right: 0;
 	transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg); 
+	-moz-transform: rotate(-1deg); 
+	-o-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg); 
 	position: absolute;
 	z-index: 50;
 }
@@ -84,6 +88,10 @@ nav #arrow {
 	height: 18px;
 	width: 18px;
 	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg); 
+	-moz-transform: rotate(180deg); 
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg); 
 	cursor: pointer;
 }
 
@@ -187,6 +195,10 @@ footer #overlay ul {
 @media screen and (min-width: 1400px) {
 	nav {
 		transform: rotate(-0.5deg);
+		-webkit-transform: rotate(-0.5deg); 
+		-moz-transform: rotate(-0.5deg); 
+		-o-transform: rotate(-0.5deg);
+		-ms-transform: rotate(-0.5deg); 	
 	}
 }
 @media screen and (max-width: 800px) {
@@ -213,6 +225,10 @@ footer #overlay ul {
 	}
 	nav {
 		transform: rotate(0deg) !important;
+		-webkit-transform: rotate(0deg) !important;
+		-moz-transform: rotate(0deg) !important; 
+		-o-transform: rotate(0deg) !important;
+		-ms-transform: rotate(0deg) !important;
 		position: absolute !important;
 	}
 	#wrapper {
