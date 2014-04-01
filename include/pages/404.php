@@ -1,6 +1,6 @@
 
 <h1>Erreur 404</h1>
-<p>Aucune page n'a été trouvée à l'adresse , nous vous invitons à signaler cette erreur à l'administrateur via la page contact.</p>
+<p>Aucune page n'a été trouvée à l'adresse <a href="<?php echo "http://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?>"><?php echo "http://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?></a>, nous vous invitons à signaler cette erreur à l'administrateur via la page <a href="?/home/contact/">contact</a>.</p>
 
 <svg
    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"
