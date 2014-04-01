@@ -242,15 +242,21 @@ footer #overlay ul {
 	}
 	footer {
 		width: 100%;
-		font-size: 0.8em;
 	}
-	footer p {
+	footer > p {
 		margin: 2px 0 0 0;
+		font-size: 0.8em;
 	}
 	footer #copyleft {
 		left: 10px;
 	}
 	#content {
 		padding: 120px 15px 60px 15px;
+	}
+	footer #overlay #overlaycontent {
+	    top: 5%;
+	    left: 5%;
+	    width: 90%;
+	    height: 90%;
 	}
 }
