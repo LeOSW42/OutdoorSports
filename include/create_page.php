@@ -70,7 +70,7 @@ function site_footer($theme, $title)
             <p>Le code source est sous licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC-BY-SA 4.0</a>.</p>
         </div>
     </div>
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 980" id="copyleft"><circle cx="490" cy="490" r="440" fill="none" stroke="#000" stroke-width="100"/><path d="M486,215C356,215 247,306 219,428L350,428C374,376 426,340 486,340C569,340 636,407 636,490C636,573 569,640 486,640C426,640 374,604 350,553L219,553C247,674 356,765 486,765C638,765 761,642 761,490C761,338 638,215 486,215z"/></svg>
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 980" id="copyleft"><circle cx="490" cy="490" r="440" fill="white" stroke="#000" stroke-width="100"/><path fill="black" d="M486,215C356,215 247,306 219,428L350,428C374,376 426,340 486,340C569,340 636,407 636,490C636,573 569,640 486,640C426,640 374,604 350,553L219,553C247,674 356,765 486,765C638,765 761,642 761,490C761,338 638,215 486,215z"/></svg>
              <p><a href="?/home/term-of-use">Mentions légales</a> — <a href="?/home/contact">Contact</a> — <a href="?/home/map">Plan du site</a></p>
 	<?php echo "         </footer>\r\n";
 }

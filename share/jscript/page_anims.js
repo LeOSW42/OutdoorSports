@@ -54,7 +54,7 @@ $( document ).ready(function() {
 	});
 
 // That animates the copyleft logo (on hover) and create the overlay
-	$( "#copyleft" ).hover(function() {
+	$( "#copyleft" ).mouseenter(function() {
 		$( "#copyleft" ).animate({opacity: 0.8}, 'fast');
 	});
 

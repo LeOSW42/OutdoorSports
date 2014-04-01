@@ -1,4 +1,4 @@
-var avancement = "1%";
+var avancement = "3%";
 
 $( "#copyleft" ).hover(function() {
 	$( "#copyleft" ).animate({opacity: 0.8}, 'fast');
