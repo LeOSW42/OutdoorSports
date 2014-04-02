@@ -6,6 +6,9 @@ switch ($page->url_array[1]) {
 	case NULL: case "":
 		$page->title = "Accueil";
 		break;
+	case "contact":
+		$page->title = "Contact";
+		break;
 	default:
 		$page->url_array[1] = "404";
 		$page->title = "Erreur 404";
@@ -22,6 +25,9 @@ function html_head_home($page1, $page2)
 		case NULL: case "":
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/home.css' />\r\n";
 			break;
+		case "contact":
+			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/contact.css' />\r\n";
+			break;
 		case "404":
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/404.css' />\r\n";
 			break;
@@ -35,6 +41,9 @@ function site_content($page1, $page2)
 	switch ($page1) {
 		case NULL: case "":
 			include("include/pages/home.php");
+			break;
+		case "contact":
+			include("include/pages/contact.php");
 			break;
 		case "404":
 			include("include/pages/404.php");
