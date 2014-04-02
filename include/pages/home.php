@@ -4,7 +4,7 @@ Ce projet est né lors d'une forte discussion enivrée sur le futur de l'économ
 C'est donc aussi une expérience personnelle que de voir si au long terme, il est possible de vivre du financement participatif à petite échelle.</blockquote>
 
 <div id="home_credits">
-	<p>Propulsé par</p>
+	<hr />
 	<img class="powered" src="share/img/php.png" alt="php"/>
 	<img class="powered" src="share/img/sublime_text.png" alt="sublime text"/>
 	<img class="powered" src="share/img/arch_linux.png" alt="arch linux"/>
