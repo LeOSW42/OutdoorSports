@@ -32,19 +32,19 @@ blockquote {
 	border-radius: 10px;
 	margin: 20px;
 }
-@media screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
 	.powered {
 		margin: 10px;
 	}
 }
-@media screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
 	.powered {
 		margin: 5px;
 		height: 30px
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 	blockquote {
 		margin: 15px 2%;
 		font-size: 1em;

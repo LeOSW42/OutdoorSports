@@ -9,7 +9,7 @@ section h1, section p {
 	margin-right: 170px;
 }
 
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 	#svg_404 {
 		top: 110px;
 		width: 100px;

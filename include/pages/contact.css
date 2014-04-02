@@ -15,6 +15,10 @@ input, textarea, select {
 	background: white;
 }
 
+input[type=text], select {
+	width: calc(100% - 135px);
+}
+
 .labeltxt {
 	vertical-align: top;
 	text-align: left;
@@ -43,15 +47,15 @@ form {
 	color: green;
 }
 
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 	label {
 		vertical-align: top;
 		text-align: left;
 		margin-bottom: 5px;
 		width: 100%;
 	}
-	input {
-		width: 100%;
+	input, select {
+		width: 100% !important;
 		margin-bottom: 8px;
 	}
 	input[type=text] {

@@ -192,7 +192,7 @@ footer #overlay ul {
     margin: 0 0 25px 25px;
 }
 
-@media screen and (min-width: 1400px) {
+@media all and (min-width: 1400px) {
 	nav {
 		transform: rotate(-0.5deg);
 		-webkit-transform: rotate(-0.5deg); 
@@ -201,7 +201,7 @@ footer #overlay ul {
 		-ms-transform: rotate(-0.5deg); 	
 	}
 }
-@media screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 	#mount3 {
 		display: none;
 	}
@@ -216,7 +216,7 @@ footer #overlay ul {
 		top: 10px;
 	}
 }
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 	#mount2 {
 		display: none;
 	}
