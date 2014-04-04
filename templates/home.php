@@ -12,6 +12,9 @@ switch ($page->url_array[1]) {
 	case "term-of-use":
 		$page->title = "Mention Légales";
 		break;
+	case "map":
+		$page->title = "Plan du Site";
+		break;
 	default:
 		$page->url_array[1] = "404";
 		$page->title = "Erreur 404";
@@ -34,6 +37,9 @@ function html_head_home($page1, $page2)
 		case "term-of-use":
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/term-of-use.css' />\r\n";
 			break;
+		case "map":
+			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/map.css' />\r\n";
+			break;
 		default:
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/404.css' />\r\n";
 			break;
@@ -51,6 +57,9 @@ function site_content($page1, $page2)
 			break;
 		case "term-of-use":
 			include("include/pages/term-of-use.php");
+			break;
+		case "map":
+			include("include/pages/map.php");
 			break;
 		default:
 			include("include/pages/404.php");
