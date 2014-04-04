@@ -1,13 +1,13 @@
 #photos {
-	background: black;
+	background: #212121;
 	height: 100%;
 	float: left;
 	display: table;
 	width: 25%;
 	color: white;
 	overflow: scroll;
-	box-shadow: 5px 0 5px black;
-	z-index: 5;
+	box-shadow: 5px 0 5px #c1c1c1;
+	z-index: 5000;
 }
 
 #photos img {
@@ -21,10 +21,15 @@ article {
 }
 
 #map {
-	background: orange;
+	background: #c1c1c1;
 	height: 400px;
+	z-index: 1;
 }
 
 #description {
 	padding: 15px;
+}
+
+.leaflet-top .leaflet-control {
+	margin-top: 40px;
 }

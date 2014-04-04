@@ -10,9 +10,7 @@
 	<img src="http://www.infoclimat.fr/photolive/photos/2013-02/151231160220131814.jpg">
 </aside>
 <article>
-	<div id="map">
-		<iframe style="z-index: 1;" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=1.447749137878418%2C43.59256066029041%2C1.471695899963379%2C43.60165143726965&amp;layer=mapnik"></iframe>
-	</div>
+	<div id="map"></div>
 	<div id="description">
 		Sed cautela nimia in peiores haeserat plagas, ut narrabimus postea, aemulis consarcinantibus insidias graves apud Constantium, cetera medium principem sed siquid auribus eius huius modi quivis infudisset ignotus, acerbum et inplacabilem et in hoc causarum titulo dissimilem sui.
 
@@ -29,3 +27,17 @@
 		Haec igitur Epicuri non probo, inquam. De cetero vellem equidem aut ipse doctrinis fuisset instructior est enim, quod tibi ita videri necesse est, non satis politus iis artibus, quas qui tenent, eruditi appellantur aut ne deterruisset alios a studiis. quamquam te quidem video minime esse deterritum.
 	</div>
 </article>
+
+<script type="text/javascript">
+var map = L.map('map', {
+  fullscreenControl: true,
+  fullscreenControlOptions: {
+    position: 'topleft'
+  }}).setView([51.505, -0.09], 13);
+
+L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+    maxZoom: 18
+}).addTo(map);
+
+</script>
