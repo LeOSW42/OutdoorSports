@@ -21,7 +21,6 @@ switch ($page->url_array[1]) {
 		break;
 }
 
-
 function html_head_home($page1, $page2)
 {
 	echo "    <script type='text/javascript' src='share/jscript/jquery-1.11.0.min.js'></script>\r\n";
