@@ -1,9 +1,13 @@
-h2 {
-	background: #ddd;
-	padding: 3px 10px;
-	margin: 15px 0 10px 0;
+ul {
+	margin: 0 15px 0 25px;
 }
 
-ul {
-	margin: 0 0 0 25px;
+.bspace {
+	line-height: 5px;
+}
+
+@media all and (min-width: 500px) {
+	.bspace {
+		line-height: 35px;
+	}
 }

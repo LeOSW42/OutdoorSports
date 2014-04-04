@@ -1,20 +1,21 @@
 #svg_404 {
 	position: absolute;
 	right: 0;
-	top: 10px;
-	width: 170px;
+	bottom: 41px;
+	height: 40%;
+	min-height: 150px;
 }
 
 section h1, section p {
-	margin-right: 170px;
+	margin: 0 25px;
 }
 
-@media all and (max-width: 500px) {
-	#svg_404 {
-		top: 110px;
-		width: 100px;
-	}
-	section h1, section p {
-		margin-right: 100px;
+.bspace {
+	line-height: 5px;
+}
+
+@media all and (min-width: 500px) {
+	.bspace {
+		line-height: 35px;
 	}
 }

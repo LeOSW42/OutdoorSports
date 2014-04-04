@@ -1,3 +1,4 @@
+<br class="bspace" />
 
 <ul>
 	<li><a href="?/home">Accueil</a>
@@ -12,3 +13,5 @@
 	<li><a href="?/shelters">Refuges</a></li>
 	<li><a href="?/carpooling">Covoiturage</a></li>
 </ul>
+
+<br class="bspace" />

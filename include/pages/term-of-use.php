@@ -1,3 +1,6 @@
+
+<br class="bspace" />
+
 <h2>Description :</h2>
 <p>Outdoor Sport l'espace web dédié aux amateurs de sports outdoor. Guides, covoiturage et informations sur les refuges y sont publiés.</p>
 <h2>Auteurs :</h2>
@@ -12,3 +15,4 @@
 <h2>Licence :</h2>
 <p>Le code source est sous licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC-BY-SA 4.0</a>.</p>
 
+<br class="bspace" />

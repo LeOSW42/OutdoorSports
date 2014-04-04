@@ -4,6 +4,20 @@ h2 {
 	margin: 15px 0 10px 0;
 }
 
+p {
+	padding: 0 15px;
+}
+
 ul {
-	margin: 0 0 0 25px;
+	margin: 0 25px;
+}
+
+.bspace {
+	line-height: 5px;
+}
+
+@media all and (min-width: 500px) {
+	.bspace {
+		line-height: 35px;
+	}
 }

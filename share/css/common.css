@@ -118,7 +118,7 @@ nav #arrow:hover {
 #content {
 	z-index: 10;
 	position: relative;
-    height: calc(100% - 195px);
+    height: calc(100% - 151px);
     display: table;
     padding-bottom: 41px;
     width: 100%;
@@ -226,7 +226,7 @@ footer #overlay ul {
 		height: 75px;
 	}
 	#content {
-	    height: calc(100% - 160px);
+	    height: calc(100% - 116px);
 	}
 	header p {
 		font-size: 2em;

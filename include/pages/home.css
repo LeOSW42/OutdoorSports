@@ -51,3 +51,13 @@ blockquote {
 		padding: 35px 15px;
 	}
 }
+
+.bspace {
+	line-height: 5px;
+}
+
+@media all and (min-width: 500px) {
+	.bspace {
+		line-height: 35px;
+	}
+}
