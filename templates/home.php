@@ -9,6 +9,9 @@ switch ($page->url_array[1]) {
 	case "contact":
 		$page->title = "Contact";
 		break;
+	case "term-of-use":
+		$page->title = "Mention Légales";
+		break;
 	default:
 		$page->url_array[1] = "404";
 		$page->title = "Erreur 404";
@@ -28,10 +31,11 @@ function html_head_home($page1, $page2)
 		case "contact":
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/contact.css' />\r\n";
 			break;
-		case "404":
-			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/404.css' />\r\n";
+		case "term-of-use":
+			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/term-of-use.css' />\r\n";
 			break;
 		default:
+			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/404.css' />\r\n";
 			break;
 	}
 }
@@ -45,10 +49,11 @@ function site_content($page1, $page2)
 		case "contact":
 			include("include/pages/contact.php");
 			break;
-		case "404":
-			include("include/pages/404.php");
+		case "term-of-use":
+			include("include/pages/term-of-use.php");
 			break;
 		default:
+			include("include/pages/404.php");
 			break;
 	}
 }

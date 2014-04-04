@@ -38,7 +38,7 @@ switch ($page->url_array[0]) {
 		$page->template = "home";
 		break;
 	case "guides":
-		$page->theme = "dark";
+		$page->theme = "orange";
 		$page->template = "guides";
 		break;
 	case "shelters":
