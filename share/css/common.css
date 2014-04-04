@@ -20,7 +20,9 @@ a {
 	width: 94%;
 	margin: 0 auto;
 	min-height: 100%;
+	height: 100%;
 	position: relative;
+    display: table;
 }
 
 header {
@@ -39,9 +41,18 @@ header p {
 
 header img {
 	height: 165px;
-	float: right;
-	margin: -10px 0 0 0;
+	position: absolute;
+	right: 0;
+	top: -10px;
 	z-index: 2;
+}
+
+#mount2 {
+	right: 120px;
+}
+
+#mount3 {
+	right: 240px;
 }
 
 nav {
@@ -105,9 +116,12 @@ nav #arrow:hover {
 }
 
 #content {
-	padding: 40px 15px 70px 15px;
 	z-index: 10;
 	position: relative;
+    height: calc(100% - 195px);
+    display: table;
+    padding-bottom: 41px;
+    width: 100%;
 }
 
 footer {
@@ -211,6 +225,9 @@ footer #overlay ul {
 	header {
 		height: 75px;
 	}
+	#content {
+	    height: calc(100% - 160px);
+	}
 	header p {
 		font-size: 2em;
 		top: 10px;
@@ -240,9 +257,6 @@ footer #overlay ul {
 	nav, nav ul {
 		height: 108px;
 	}
-	footer {
-		width: 100%;
-	}
 	footer > p {
 		margin: 2px 0 0 0;
 		font-size: 0.8em;
@@ -251,7 +265,8 @@ footer #overlay ul {
 		left: 10px;
 	}
 	#content {
-		padding: 120px 15px 60px 15px;
+		margin-top: 99px;
+		height: calc(100% - 215px);
 	}
 	footer #overlay #overlaycontent {
 	    top: 5%;

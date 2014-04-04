@@ -50,7 +50,8 @@ $( document ).ready(function() {
 		var width = $("header").width();
 		var position = p.position();
 		var mousePos = (e.pageX - position.left)*100 / width;
-	 	$("header img").css({marginLeft: -mousePos/15+"%"});
+	 	$("#mount2").css({right: 200-mousePos+"px"});
+	 	$("#mount3").css({right: 400-2*mousePos+"px"});
 	});
 
 // That animates the copyleft logo (on hover) and create the overlay
