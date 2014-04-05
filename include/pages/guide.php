@@ -31,6 +31,7 @@
 <script type="text/javascript">
 var map = L.map('map', {
   fullscreenControl: true,
+  scrollWheelZoom: false,
   fullscreenControlOptions: {
     position: 'topleft'
   }}).setView([51.505, -0.09], 13);
@@ -39,5 +40,7 @@ L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
     maxZoom: 18
 }).addTo(map);
+
+		map.addControl(new L.Control.MouseScroll())
 
 </script>

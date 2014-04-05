@@ -1,0 +1,11 @@
+.leaflet-control-scrollzoom {
+  text-indent: -999em;
+  background: #fff url(../img/wheel.png) no-repeat scroll center center;
+  background-size: 16px 16px;
+}
+.leaflet-control-scrollzoom:focus {
+  outline: 0;
+}
+.leaflet-control-scrollzoom.leaflet-disabled {
+  background-image: url(../img/wheel_over.png);
+}
