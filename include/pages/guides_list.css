@@ -23,14 +23,23 @@
 
 #map {
 	background: #555;
+	min-height: 400px;
 }
 
 #list, #search {
 	display: none;
 }
 
-.leaflet-control-container .leaflet-top {
+.leaflet-control-container .leaflet-top.leaflet-left {
 	margin-top: 30px;
+}
+
+.leaflet-control-container .leaflet-top.leaflet-right {
+	margin-top: 70px;
+}
+
+.leaflet-control-container .leaflet-top.leaflet-right a {
+	border-bottom: none;
 }
 
 a.leaflet-control-scrollzoom.leaflet-disabled {

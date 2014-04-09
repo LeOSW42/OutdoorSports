@@ -33,18 +33,42 @@
 	</div>
 
 <script type="text/javascript">
+
+var KeyIGN = "mvyjs9blkl0qe94kg23zmxtf"
+
+var url_wmts_ign =  "http://wxs.ign.fr/"+ 
+    KeyIGN + 
+    "/geoportail/wmts?LAYER="+
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS"+
+    "&EXCEPTIONS=text/xml&FORMAT="+
+    "image/jpeg"+
+    "&SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE="+
+    "normal"+
+    "&TILEMATRIXSET=PM&&TILEMATRIX={z}&TILECOL={x}&TILEROW={y}";
+
+var osm   = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Maps & Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}),
+    outdoor  = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {attribution: 'Maps © <a href="http://www.thunderforest.com">Thunderforest</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'});
+    ign  = L.tileLayer(url_wmts_ign, {attribution: '&copy; <a href="http://www.ign.fr/">IGN</a>'});
+
 var map = L.map('map', {
+  layers: [osm, outdoor, ign],
   fullscreenControl: true,
   fullscreenControlOptions: {
     position: 'topleft'
   }}).setView([51.505, -0.09], 13);
 
-L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-    maxZoom: 18
-}).addTo(map);
+map.addControl(new L.Control.MouseScroll());
 
-map.addControl(new L.Control.MouseScroll())
+var baseLayers = {
+	"OpenStreetMap": osm,
+	"Outdoor (OSM)": outdoor,
+	"IGN": ign
+};
+
+L.control.layers(baseLayers).addTo(map);
+
+
+// Map div size
 
 $(window).resize(function() {
 	if ($(window).width()>500) {
@@ -55,6 +79,7 @@ $(window).resize(function() {
 	};
 	map.invalidateSize();
 }).trigger("resize");
+
 // Page layers
 
 $("#map_button").click(function() {
