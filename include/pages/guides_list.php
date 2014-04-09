@@ -55,7 +55,7 @@ var map = L.map('map', {
   fullscreenControl: true,
   fullscreenControlOptions: {
     position: 'topleft'
-  }}).setView([51.505, -0.09], 13);
+  }}).setView([47, 2], 6);
 
 map.addControl(new L.Control.MouseScroll());
 
