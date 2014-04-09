@@ -6,6 +6,9 @@ switch ($page->url_array[1]) {
 	case NULL: case "":
 		$page->title = "Randonnées";
 		break;
+	case "guide":
+		$page->title = "Randonnées";
+		break;
 	default:
 		$page->url_array[1] = "404";
 		$page->title = "Erreur 404";
@@ -25,6 +28,9 @@ function html_head_guides($page1, $page2)
 	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/L.Control.MouseScroll.css' />\r\n";
 	switch ($page1) {
 		case NULL: case "":
+			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/guides_list.css' />\r\n";
+			break;
+		case "guide":
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/guide.css' />\r\n";
 			break;
 		default:
@@ -37,6 +43,9 @@ function site_content($page1, $page2)
 {
 	switch ($page1) {
 		case NULL: case "":
+			include("include/pages/guides_list.php");
+			break;
+		case "guide":
 			include("include/pages/guide.php");
 			break;
 		default:

@@ -24,11 +24,6 @@ article {
 	background: #555;
 	height: 400px;
 	z-index: 1;
-	opacity: 0.5;
-}
-
-#map:hover {
-	opacity: 1;
 }
 
 #description {

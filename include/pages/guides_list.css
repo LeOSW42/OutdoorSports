@@ -1,0 +1,38 @@
+#buttons {
+	position: absolute;
+	top: 30px;
+	right: 15px;
+	z-index: 5;
+}
+
+#buttons span {
+	margin: 5px;
+	padding: 5px 10px;
+	font-weight: 600;
+	background: #212121;
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: 0 0 5px #212121, inset 0 0 15px #444;
+	opacity: 0.8;
+}
+
+#buttons span:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#map {
+	background: #555;
+}
+
+#list, #search {
+	display: none;
+}
+
+.leaflet-control-container .leaflet-top {
+	margin-top: 30px;
+}
+
+a.leaflet-control-scrollzoom.leaflet-disabled {
+	cursor: pointer;
+}
