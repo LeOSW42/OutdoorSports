@@ -12,8 +12,12 @@ ul {
 	margin: 0 25px;
 }
 
-.bspace {
-	line-height: 5px;
+#content > *:first-child {
+	margin-top: 40px;
+}
+
+#content > *:last-child {
+	margin-bottom: 20px;
 }
 
 @media all and (min-width: 500px) {
