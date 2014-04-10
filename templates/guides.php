@@ -24,6 +24,7 @@ function html_head_guides($page1, $page2)
 	echo "    <script type='text/javascript' src='share/jscript/Control.FullScreen.js'></script>\r\n";
 	echo "    <script type='text/javascript' src='share/jscript/L.Control.MouseScroll.js'></script>\r\n";
 	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/leaflet.css' />\r\n";
+	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/leaflet.dark.css' />\r\n";
 	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/Control.FullScreen.css' />\r\n";
 	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/L.Control.MouseScroll.css' />\r\n";
 	switch ($page1) {

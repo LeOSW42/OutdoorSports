@@ -1,0 +1,44 @@
+#buttons {
+	position: absolute;
+	top: 30px;
+	right: 5px;
+	z-index: 5;
+}
+
+#buttons span {
+	margin: 5px;
+	padding: 5px 10px;
+	font-weight: 600;
+	background: #212121;
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: 0 0 5px #212121, inset 0 0 15px #444;
+	opacity: 0.8;
+}
+
+.leaflet-touch .leaflet-bar a, .leaflet-touch .leaflet-control-layers {
+	background: #212121;
+	color: #c1c1c1;
+	opacity: 0.8;
+}
+
+.leaflet-touch .leaflet-bar, .leaflet-touch .leaflet-control-layers {
+	box-shadow: 0 0 5px #212121, inset 0 0 15px #444;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#buttons span:hover, .leaflet-bar a:hover {
+	opacity: 1;
+	color: #c1c1c1;
+	background: #212121;
+	cursor: pointer;
+}
+
+.leaflet-control-container .leaflet-top.leaflet-right a {
+	border-bottom: none;
+}
+
+a.leaflet-control-scrollzoom.leaflet-disabled {
+	cursor: pointer;
+}

@@ -1,6 +1,8 @@
 .leaflet-control-scrollzoom {
   text-indent: -999em;
-  background: #fff url(../img/wheel.png) no-repeat scroll center center;
+  background-image: url(../img/wheel.png) !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
   background-size: 16px 16px;
 }
 .leaflet-control-scrollzoom:focus {

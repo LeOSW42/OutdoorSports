@@ -51,7 +51,7 @@ var osm   = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {at
     ign  = L.tileLayer(url_wmts_ign, {attribution: '&copy; <a href="http://www.ign.fr/">IGN</a>'});
 
 var map = L.map('map', {
-  layers: [osm, outdoor, ign],
+  layers: [outdoor],
   fullscreenControl: true,
   fullscreenControlOptions: {
     position: 'topleft'
