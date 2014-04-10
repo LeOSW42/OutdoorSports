@@ -2,12 +2,10 @@
 
 	<div id="map"></div>
 	<div id="list">
-		<br><br>
 		<p>Petit descriptif de liste</p><br>
 		<a href="?/guides/guide">Exemple de randonnée</a>
 	</div>
 	<div id="search">
-		<br><br>
 		<p>Non implémenté</p>		
 	</div>
 
@@ -60,7 +58,12 @@ L.control.layers(baseLayers).addTo(map);
 // On window resize
 $(window).resize(function() {
 	if ($(window).width()>500) {
-		$("#map").height($("body").height()-$("header").height()-41).width(0.94*$(window).width());
+		if (headerPresent==1) {
+			$("#map").height($("body").height()-$("header").height()-41).width(0.94*$(window).width());
+		}
+		else {
+			$("#map").height($("body").height()-41).width(0.94*$(window).width());
+		}
 	}
 	else {
 		$("#map").height($("body").height()-$("header").height()-41).width($(window).width());

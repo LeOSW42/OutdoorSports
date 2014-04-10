@@ -12,6 +12,10 @@
 	margin-right: 15px;
 }
 
+#list > *:first-child, #search > *:first-child {
+	margin-top: 40px;
+}
+
 .leaflet-control-container .leaflet-top.leaflet-left {
 	margin-top: 30px;
 }

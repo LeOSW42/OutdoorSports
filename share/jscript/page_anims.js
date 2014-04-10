@@ -5,6 +5,7 @@ $( document ).ready(function() {
 		if (headerPresent==1) {
 			$('header').slideToggle(300)
 			$('header p').slideToggle(300)
+			$('header img').slideToggle(300)
 			$( "nav" ).animate({marginTop: 0}, 300);
 			$( "nav" ).rotate({
 				duration:300,
@@ -21,6 +22,7 @@ $( document ).ready(function() {
 		else {
 			$('header').slideToggle(300)
 			$('header p').slideToggle(300)
+			$('header img').slideToggle(300)
 			$( "nav" ).animate({marginTop: "-14px"}, 300);
 			if ($(document).width()>1400) {
 				$( "nav" ).rotate({
