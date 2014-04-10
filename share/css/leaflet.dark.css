@@ -1,10 +1,3 @@
-#buttons {
-	position: absolute;
-	top: 30px;
-	right: 5px;
-	z-index: 5;
-}
-
 #buttons span {
 	margin: 5px;
 	padding: 5px 10px;

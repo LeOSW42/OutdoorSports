@@ -14,3 +14,10 @@
 .leaflet-control-container .leaflet-top.leaflet-right {
 	margin-top: 60px;
 }
+
+#buttons {
+	position: absolute;
+	top: 30px;
+	right: 5px;
+	z-index: 5;
+}
