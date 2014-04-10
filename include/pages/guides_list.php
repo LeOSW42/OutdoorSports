@@ -11,7 +11,10 @@
 
 <script type="text/javascript">
 
-var KeyIGN = "mvyjs9blkl0qe94kg23zmxtf"
+// ******** Generating the Leaflet map ********
+
+// IGN URL to the IGN layer
+var KeyIGN = "mvyjs9blkl0qe94kg23zmxtf" // professionels.ign.fr
 
 var url_wmts_ign =  "http://wxs.ign.fr/"+ 
     KeyIGN + 
@@ -21,32 +24,36 @@ var url_wmts_ign =  "http://wxs.ign.fr/"+
     "image/jpeg"+
     "&SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE="+
     "normal"+
-    "&TILEMATRIXSET=PM&&TILEMATRIX={z}&TILECOL={x}&TILEROW={y}";
+    "&TILEMATRIXSET=PM&&TILEMATRIX={z}&TILECOL={x}&TILEROW={y}"; // Correct tile
 
+// Differents layers for the map
 var osm   = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Maps & Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}),
     outdoor  = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {attribution: 'Maps © <a href="http://www.thunderforest.com">Thunderforest</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'});
     ign  = L.tileLayer(url_wmts_ign, {attribution: '&copy; <a href="http://www.ign.fr/">IGN</a>'});
 
+// Creation of the map
 var map = L.map('map', {
   layers: [outdoor],
-  fullscreenControl: true,
+  fullscreenControl: true, // Fullscreen button
   fullscreenControlOptions: {
     position: 'topleft'
-  }}).setView([47, 2], 6);
+  }}).setView([47, 2], 6); // Hole france
 
+// Mouse Scroll API
 map.addControl(new L.Control.MouseScroll());
 
+// Base layers
 var baseLayers = {
 	"OpenStreetMap": osm,
 	"Outdoor (OSM)": outdoor,
 	"IGN": ign
 };
-
 L.control.layers(baseLayers).addTo(map);
 
 
-// Map div size
+// ******** Change the #map div size on events  ********
 
+// On window resize
 $(window).resize(function() {
 	if ($(window).width()>500) {
 		$("#map").height($("body").height()-$("header").height()-41).width(0.94*$(window).width());
@@ -57,6 +64,7 @@ $(window).resize(function() {
 	map.invalidateSize();
 }).trigger("resize");
 
+// On header slide toggle (also moves the button top spacing)
 $('#arrow').click(function() {
 	if(headerPresent==1) {
 		$("#map").animate({height: $("body").height()-41}, 300);
@@ -71,10 +79,12 @@ $('#arrow').click(function() {
 	map.invalidateSize();
 });
 
+// On fullscreen enter (also moves the button top spacing)
 map.on('enterFullscreen', function(){
 	$(".leaflet-control-container .leaflet-top").css({marginTop: 5});
 });
 
+// On fullscreen exit (also moves the button top spacing)
 map.on('exitFullscreen', function(){
 	if(headerPresent==1) {
 		$("#map").css("height", $("body").height()-$("header").height()-41);
@@ -89,7 +99,7 @@ map.on('exitFullscreen', function(){
 	map.invalidateSize();
 });
 
-// Page layers
+// ******** Makes the pages buttons working  ********
 
 $("#map_button").click(function() {
 	if ($("#list").css("display")=="none") {
