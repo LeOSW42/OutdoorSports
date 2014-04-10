@@ -16,8 +16,15 @@
 	opacity: 0.8;
 }
 
+#buttons span:hover, .leaflet-bar a:hover {
+	opacity: 1;
+	color: #c1c1c1;
+	background-color: #212121;
+	cursor: pointer;
+}
+
 .leaflet-touch .leaflet-bar a, .leaflet-touch .leaflet-control-layers {
-	background: #212121;
+	background-color: #212121;
 	color: #c1c1c1;
 	opacity: 0.8;
 }
@@ -28,11 +35,9 @@
 	border-radius: 5px;
 }
 
-#buttons span:hover, .leaflet-bar a:hover {
-	opacity: 1;
-	color: #c1c1c1;
-	background: #212121;
-	cursor: pointer;
+.leaflet-disabled {
+	background-color: #050505 !important;
+	color: #999 !important;
 }
 
 .leaflet-control-container .leaflet-top.leaflet-right a {
