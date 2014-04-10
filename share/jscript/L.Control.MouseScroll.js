@@ -1,9 +1,9 @@
 L.Control.MouseScroll = L.Control.Zoom.extend({
   options: {
     position: "topleft",
-    mouseScrollText: "Scroll Zoom",
+    mouseScrollText: "Zoom Molette",
     forceSeparateButton: false,
-    mouseScrollTitle: "Scroll Zoom"
+    mouseScrollTitle: "Scroll Molette"
   },
 
   onAdd: function (map) {
