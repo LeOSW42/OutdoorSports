@@ -2,10 +2,12 @@
 
 	<div id="map"></div>
 	<div id="list">
-		<p>Petit descriptif de list</p><br>
+		<br><br>
+		<p>Petit descriptif de liste</p><br>
 		<a href="?/guides/guide">Exemple de randonnée</a>
 	</div>
 	<div id="search">
+		<br><br>
 		<p>Non implémenté</p>		
 	</div>
 
@@ -27,9 +29,10 @@ var url_wmts_ign =  "http://wxs.ign.fr/"+
     "&TILEMATRIXSET=PM&&TILEMATRIX={z}&TILECOL={x}&TILEROW={y}"; // Correct tile
 
 // Differents layers for the map
-var osm   = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Maps & Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}),
-    outdoor  = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {attribution: 'Maps © <a href="http://www.thunderforest.com">Thunderforest</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'});
-    ign  = L.tileLayer(url_wmts_ign, {attribution: '&copy; <a href="http://www.ign.fr/">IGN</a>'});
+var osm   = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: 'Maps & Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}),
+	osmfr   = L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {maxZoom: 20, attribution: 'Maps © <a href="http://www.openstreetmap.fr">OpenSreetMap France</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'});
+    outdoor  = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {maxZoom: 18, attribution: 'Maps © <a href="http://www.thunderforest.com">Thunderforest</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}),
+    ign  = L.tileLayer(url_wmts_ign, {maxZoom: 18, attribution: 'Maps & Data © <a href="http://www.ign.fr/">IGN</a>'});
 
 // Creation of the map
 var map = L.map('map', {
@@ -45,6 +48,7 @@ map.addControl(new L.Control.MouseScroll());
 // Base layers
 var baseLayers = {
 	"OpenStreetMap": osm,
+	"OpenStreetMap France": osmfr,
 	"Outdoor (OSM)": outdoor,
 	"IGN": ign
 };

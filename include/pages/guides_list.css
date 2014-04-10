@@ -7,6 +7,11 @@
 	display: none;
 }
 
+#list > *, #search > * {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
 .leaflet-control-container .leaflet-top.leaflet-left {
 	margin-top: 30px;
 }
