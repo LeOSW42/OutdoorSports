@@ -27,8 +27,7 @@ var url_wmts_ign =  "http://wxs.ign.fr/"+
     "&TILEMATRIXSET=PM&&TILEMATRIX={z}&TILECOL={x}&TILEROW={y}"; // Correct tile
 
 // Differents layers for the map
-var osm   = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: 'Maps & Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}),
-	osmfr   = L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {maxZoom: 20, attribution: 'Maps © <a href="http://www.openstreetmap.fr">OpenSreetMap France</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'});
+var	osmfr   = L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {maxZoom: 20, attribution: 'Maps © <a href="http://www.openstreetmap.fr">OpenSreetMap France</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'});
     outdoor  = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {maxZoom: 18, attribution: 'Maps © <a href="http://www.thunderforest.com">Thunderforest</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}),
     ign  = L.tileLayer(url_wmts_ign, {maxZoom: 18, attribution: 'Maps & Data © <a href="http://www.ign.fr/">IGN</a>'});
 
@@ -45,10 +44,9 @@ map.addControl(new L.Control.MouseScroll());
 
 // Base layers
 var baseLayers = {
-	"OpenStreetMap": osm,
-	"OpenStreetMap France": osmfr,
-	"Outdoor (OSM)": outdoor,
-	"IGN": ign
+	"OSM France": osmfr,
+	"OSM Outdoor": outdoor,
+	"IGN France": ign
 };
 L.control.layers(baseLayers).addTo(map);
 
@@ -76,14 +74,13 @@ $('#arrow').click(function() {
 	if(headerPresent==1) {
 		$("#map").animate({height: $("body").height()-41}, 300);
 		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 80}, 300);
-		$("#buttons").animate({top: 50}, 300);
+		$("#buttons").animate({top: 50}, 300, function(){map.invalidateSize();});
 	}
 	else {
 		$("#map").animate({height: $("body").height()-$("header").height()-41}, 300);
 		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 60}, 300);
-		$("#buttons").animate({top: 30}, 300);
+		$("#buttons").animate({top: 30}, 300, function(){map.invalidateSize();});
 	}
-	map.invalidateSize();
 });
 
 // On fullscreen enter (also moves the button top spacing)
