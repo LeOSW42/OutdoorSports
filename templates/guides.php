@@ -42,7 +42,7 @@ function html_head_guides($page1, $page2)
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/L.Control.MouseScroll.css' />\r\n";
 			break;
 		default:
-			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/404.css' />\r\n";
+			echo "    <link rel='type' stylesheet='text/css' media='screen, handheld' href='include/pages/404.css' />\r\n";
 			break;
 	}
 }

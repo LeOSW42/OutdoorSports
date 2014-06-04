@@ -12,9 +12,14 @@
 	<div id="home">
         <p>Un Homme est actuellement en train de créer cette expérience...</p>
         <div class="meter-wrap">
+            <p class="avancement"></p>
             <div class="meter-value" style="width: 0%;"></div>
         </div>
-        <p class="avancement"></p>
+        <form method="post" action="mail.php" onsubmit="javascript:return ValidateForm(this)">
+            <label>Entrez votre courriel pour être tenu au courant de l'avancement</label><br>
+            <input type="text" name="mail" />
+            <input type="submit" />
+        </form>
     </div>
 
     <div id="overlay">

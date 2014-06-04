@@ -39,12 +39,12 @@ body {
     text-shadow: 1px 1px black, 0 0 5px black;
     font-weight: lighter;
     font-size: 1.1em;
-    margin-top: -77px;
+    margin-top: -110px;
     position: absolute;
     top: 50%;
     left: 3%;
     width: 94%;
-    height: 154px;
+    height: 220px;
     text-align: center;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .meter-wrap, .meter-value{
-    height: 30px;
+    height: 70px;
     background: #999;
 }
 
@@ -73,6 +73,12 @@ body {
 
 .avancement {
     font-size: 3.5em;
+    color: #222;
+    position: absolute;
+    text-shadow: 0 0 5px #ccc;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
 }
 
 /* Credit & license */
@@ -145,4 +151,31 @@ body {
     font-size: 0.8em;
     padding: 0 25px;
     margin: 0 0 25px 25px;
+}
+
+form {
+    background: rgba(200,200,200,0.1);
+    padding: 10px;
+    text-shadow: none;
+    margin: auto;
+    max-width: -moz-fit-content;
+}
+
+input {
+    margin-top: 10px;
+    background: #888;
+    border-radius: 5px;
+    border: 1px solid #777;
+    font-weight: normal;
+    text-align: center;
+}
+
+input[type=submit] {
+    height: 27px;
+    width: 22%;
+}
+
+input[type=text] {
+    height: 25px;
+    width: 72%;
 }

@@ -30,3 +30,19 @@ $('#overlay').on('click', function (e) {
 $( document.body ).keypress(function() {
 	$( "#overlay" ).fadeOut('fast');
 });
+
+function isValidEmail(str) {
+   return (str.indexOf(".") > 2) && (str.indexOf("@") > 0);
+}
+
+function ValidateForm(form)
+{
+   if(!isValidEmail(form.mail.value)) 
+   { 
+      alert('L\'adresse courriel entrée est invalide') 
+      form.mail.focus(); 
+      return false; 
+   }
+	return true;
+ 
+} 
