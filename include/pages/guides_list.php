@@ -70,18 +70,18 @@ $(window).resize(function() {
 }).trigger("resize");
 
 // On header slide toggle (also moves the button top spacing)
-$('#arrow').click(function() {
+function toogleMapSize(duration) {
 	if(headerPresent==1) {
-		$("#map").animate({height: $("body").height()-41}, 300);
-		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 80}, 300);
-		$("#buttons").animate({top: 50}, 300, function(){map.invalidateSize();});
+		$("#map").animate({height: $("body").height()-41}, duration);
+		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 80}, duration);
+		$("#buttons").animate({top: 50}, duration, function(){map.invalidateSize();});
 	}
 	else {
-		$("#map").animate({height: $("body").height()-$("header").height()-41}, 300);
-		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 60}, 300);
-		$("#buttons").animate({top: 30}, 300, function(){map.invalidateSize();});
+		$("#map").animate({height: $("body").height()-$("header").height()-41}, duration);
+		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 60}, duration);
+		$("#buttons").animate({top: 30}, duration, function(){map.invalidateSize();});
 	}
-});
+}
 
 // On fullscreen enter (also moves the button top spacing)
 map.on('enterFullscreen', function(){

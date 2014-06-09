@@ -2,6 +2,8 @@
 
 /* Contain PHP code to generate header, head, nav, footer */
 
+include('session.php');
+
 function html_head($theme, $template, $title, $page1, $page2)
 {
 	echo "<!DOCTYPE html>\r\n";
@@ -42,9 +44,12 @@ function site_nav($theme, $title)
 	echo "                <li><a href='?/guides'>Randonnées</a></li>\r\n";
 	echo "                <li><a href='?/shelters'>Refuges</a></li>\r\n";
 	echo "                <li><a href='?/carpooling'>Covoiturage</a></li>\r\n";
-	echo "                <li id='arrow'><svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><g><rect fill='none' height='32' width='32'/></g><g><polygon points='2.002,10 16.001,24 30.002,10'/></g></svg></li>\r\n";
+	echo "                <li id='arrow' onClick='headerToogle(300);'><svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><g><rect fill='none' height='32' width='32'/></g><g><polygon points='2.002,10 16.001,24 30.002,10'/></g></svg></li>\r\n";
 	echo "            </ul>\r\n";
 	echo "        </nav>\r\n";
+	if($_SESSION['header']==0) {
+		echo "    <script type='text/javascript'>headerToogle(10);</script>";
+	}
 	echo "        <section id='content'>\r\n";
 }
 

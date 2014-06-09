@@ -1,18 +1,17 @@
 var headerPresent = 1;
 
-$( document ).ready(function() {
-	$('#arrow').click(function() {
+function headerToogle(duration) {
 		if (headerPresent==1) {
-			$('header').slideToggle(300)
-			$('header p').slideToggle(300)
-			$('header img').slideToggle(300)
-			$( "nav" ).animate({marginTop: 0}, 300);
+			$('header').slideToggle(duration)
+			$('header p').slideToggle(duration)
+			$('header img').slideToggle(duration)
+			$( "nav" ).animate({marginTop: 0}, duration);
 			$( "nav" ).rotate({
-				duration:300,
+				duration:duration,
 	 			animateTo:0
 			});
 			$( "#arrow" ).rotate({
-				duration:300,
+				duration:duration,
 				angle: 180,
 	 			animateTo:0
 			});
@@ -20,32 +19,34 @@ $( document ).ready(function() {
 			headerPresent = 0;
 		}
 		else {
-			$('header').slideToggle(300)
-			$('header p').slideToggle(300)
-			$('header img').slideToggle(300)
-			$( "nav" ).animate({marginTop: "-14px"}, 300);
+			$('header').slideToggle(duration)
+			$('header p').slideToggle(duration)
+			$('header img').slideToggle(duration)
+			$( "nav" ).animate({marginTop: "-14px"}, duration);
 			if ($(document).width()>1400) {
 				$( "nav" ).rotate({
-					duration:300,
+					duration:duration,
 		 			animateTo:-0.5
 				});
 			}
 			else {
 				$( "nav" ).rotate({
-					duration:300,
+					duration:duration,
 		 			animateTo:-1
 				});
 			};
 			$( "#arrow" ).rotate({
-				duration:300,
+				duration:duration,
 				angle: 0,
 	 			animateTo:180
 			});
 			$('nav').css({position: "absolute"});
 			headerPresent = 1;
 		};
-	});
+		$.get("include/session.php?header_update="+headerPresent);
+}
 
+$( document ).ready(function() {
 // That makes the 3 mountains moving on the header
 	$("header").bind('mousemove',function(e){ 
 		var p = $( "header" );
