@@ -30,6 +30,7 @@ function html_head_guides($page1, $page2)
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/leaflet.dark.css' />\r\n";
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/Control.FullScreen.css' />\r\n";
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/L.Control.MouseScroll.css' />\r\n";
+			echo "    <script type='text/javascript'>function headerHeightToogle(duration) { mapToogle(duration); headerToogle(duration);}</script>\r\n";
 			break;
 		case "guide":
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='include/pages/guide.css' />\r\n";
@@ -40,9 +41,11 @@ function html_head_guides($page1, $page2)
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/leaflet.dark.css' />\r\n";
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/Control.FullScreen.css' />\r\n";
 			echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/L.Control.MouseScroll.css' />\r\n";
+			echo "    <script type='text/javascript'>function headerHeightToogle(duration) {headerToogle(duration);}</script>\r\n";
 			break;
 		default:
 			echo "    <link rel='type' stylesheet='text/css' media='screen, handheld' href='include/pages/404.css' />\r\n";
+			echo "    <script type='text/javascript'>function headerHeightToogle(duration) {headerToogle(duration);}</script>\r\n";
 			break;
 	}
 }

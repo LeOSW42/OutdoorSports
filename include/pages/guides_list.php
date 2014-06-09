@@ -70,7 +70,7 @@ $(window).resize(function() {
 }).trigger("resize");
 
 // On header slide toggle (also moves the button top spacing)
-function toogleMapSize(duration) {
+function mapToogle(duration) {
 	if(headerPresent==1) {
 		$("#map").animate({height: $("body").height()-41}, duration);
 		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 80}, duration);
