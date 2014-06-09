@@ -1,5 +1,7 @@
 <?php
 
+include('include/config.inc.php');
+
 /* This is the main page of the project
 Redirects all the index.php?/home/url to the correct template, with the appropriate content.
 */
@@ -62,9 +64,9 @@ include("include/create_page.php");
 if (!isset($page->url_array[1])) { $page->url_array[1] = NULL; }
 if (!isset($page->url_array[2])) { $page->url_array[2] = NULL; }
 html_head($page->theme, $page->template, $page->title, $page->url_array[1],$page->url_array[2]);
-site_header($page->theme, $page->title);
+site_header($page->theme, $config->sitename);
 site_nav($page->theme, $page->title);
-site_content($page->url_array[1],$page->url_array[2]);
+site_content($page->url_array[1],$page->url_array[2], $config);
 site_footer($page->theme, $page->title);
 html_end();
 

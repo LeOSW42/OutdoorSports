@@ -14,7 +14,7 @@
 // ******** Generating the Leaflet map ********
 
 // IGN URL to the IGN layer
-var KeyIGN = "mvyjs9blkl0qe94kg23zmxtf" // professionels.ign.fr
+var KeyIGN = "<?php echo $config->ignKey; ?>" // professionels.ign.fr
 
 var url_wmts_ign =  "http://wxs.ign.fr/"+ 
     KeyIGN + 

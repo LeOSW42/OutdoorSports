@@ -50,7 +50,7 @@ function html_head_guides($page1, $page2)
 	}
 }
 
-function site_content($page1, $page2)
+function site_content($page1, $page2, $config)
 {
 	switch ($page1) {
 		case NULL: case "":
