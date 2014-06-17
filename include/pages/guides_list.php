@@ -57,14 +57,14 @@ L.control.layers(baseLayers).addTo(map);
 $(window).resize(function() {
 	if ($(window).width()>500) {
 		if (headerPresent==1) {
-			$("#map").height($("body").height()-$("header").height()-41).width(0.94*$(window).width());
+			$("#map").height($("body").height()-$("header").height()).width(0.94*$(window).width());
 		}
 		else {
-			$("#map").height($("body").height()-41).width(0.94*$(window).width());
+			$("#map").height($("body").height()).width(0.94*$(window).width());
 		}
 	}
 	else {
-		$("#map").height($("body").height()-$("header").height()-41).width($(window).width());
+		$("#map").height($("body").height()-$("header").height()).width($(window).width());
 	};
 	map.invalidateSize();
 }).trigger("resize");
@@ -72,12 +72,12 @@ $(window).resize(function() {
 // On header slide toggle (also moves the button top spacing)
 function mapToogle(duration) {
 	if(headerPresent==1) {
-		$("#map").animate({height: $("body").height()-41}, duration);
+		$("#map").animate({height: $("body").height()}, duration);
 		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 80}, duration);
 		$("#buttons").animate({top: 50}, duration, function(){map.invalidateSize();});
 	}
 	else {
-		$("#map").animate({height: $("body").height()-$("header").height()-41}, duration);
+		$("#map").animate({height: $("body").height()-$("header").height()}, duration);
 		$(".leaflet-control-container .leaflet-top.leaflet-right").animate({marginTop: 60}, duration);
 		$("#buttons").animate({top: 30}, duration, function(){map.invalidateSize();});
 	}
@@ -91,12 +91,12 @@ map.on('enterFullscreen', function(){
 // On fullscreen exit (also moves the button top spacing)
 map.on('exitFullscreen', function(){
 	if(headerPresent==1) {
-		$("#map").css("height", $("body").height()-$("header").height()-41);
+		$("#map").css("height", $("body").height()-$("header").height());
 		$(".leaflet-control-container .leaflet-top.leaflet-right").css({marginTop: 60});
 		$(".leaflet-control-container .leaflet-top.leaflet-left").css({marginTop: 30});
 	}
 	else {
-		$("#map").css("height", $("body").height()-41);
+		$("#map").css("height", $("body").height());
 		$(".leaflet-control-container .leaflet-top.leaflet-right").css({marginTop: 80}, 300);
 		$(".leaflet-control-container .leaflet-top.leaflet-left").css({marginTop: 30});
 	}

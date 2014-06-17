@@ -11,13 +11,13 @@ function html_head($theme, $template, $title, $page1, $page2)
 	echo "<head>\r\n";
 	echo "    <meta charset='utf-8' />\r\n";
 	echo "    <meta name='viewport' content='width=device-width, height=device-height'>\r\n";
+	echo "    <title>".$title." — Outdoor Sports</title>\r\n";
+	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/common.css' />\r\n";
+	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/".$theme.".css' />\r\n";
 	$head_specific_to_page = "html_head_".$template;
 	if (function_exists($head_specific_to_page)) {
 		$head_specific_to_page($page1, $page2);
 	}
-	echo "    <title>".$title." — Outdoor Sports</title>\r\n";
-	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/common.css' />\r\n";
-	echo "    <link rel='stylesheet' type='text/css' media='screen, handheld' href='share/css/".$theme.".css' />\r\n";
 	echo "    <!--[if IE]>\r\n";
 	echo "    <script src='share/jscript/html5.js'></script>\r\n";
 	echo "    <![endif]-->\r\n";

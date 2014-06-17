@@ -2,29 +2,42 @@
 	margin: 5px;
 	padding: 5px 10px;
 	font-weight: 600;
-	background: #212121;
+	background: #454545; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #454545 0%, #252525 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#454545), color-stop(100%,#252525)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #454545 0%,#252525 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #454545 0%,#252525 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #454545 0%,#252525 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #454545 0%,#252525 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#252525',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	border-radius: 5px;
-	border: 1px solid black;
-	box-shadow: 0 0 5px #212121, inset 0 0 15px #444;
+	border: 1px solid #454545;
+	box-shadow: 0px 0px 1px #ccc inset;
 	opacity: 0.8;
 }
 
 #buttons span:hover, .leaflet-bar a:hover {
 	opacity: 1;
 	color: #c1c1c1;
-	background-color: #212121;
 	cursor: pointer;
 }
 
 .leaflet-touch .leaflet-bar a, .leaflet-touch .leaflet-control-layers {
-	background-color: #212121;
+	background: #454545; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #454545 0%, #252525 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#454545), color-stop(100%,#252525)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #454545 0%,#252525 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #454545 0%,#252525 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #454545 0%,#252525 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #454545 0%,#252525 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#252525',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	color: #c1c1c1;
 	opacity: 0.8;
 }
 
 .leaflet-touch .leaflet-bar, .leaflet-touch .leaflet-control-layers {
-	box-shadow: 0 0 5px #212121, inset 0 0 15px #444;
-	border: 1px solid black;
+	box-shadow: 0px 0px 1px #ccc inset;
+	border: 1px solid #454545;
 	border-radius: 5px;
 }
 
