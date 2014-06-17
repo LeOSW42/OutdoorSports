@@ -38,6 +38,19 @@ nav li:hover {
 	border-bottom: 4px solid orange;
 }
 
+.smallNav {
+	border-bottom: 1px solid #777;
+	background: #bbbbbb; /* Old browsers */
+	background: -moz-linear-gradient(top, #bbbbbb 0%, #a5a5a5 40%, #aaaaaa 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbbbbb), color-stop(40%,#a5a5a5), color-stop(100%,#aaaaaa)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #bbbbbb 0%,#a5a5a5 40%,#aaaaaa 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #bbbbbb 0%,#a5a5a5 40%,#aaaaaa 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #bbbbbb 0%,#a5a5a5 40%,#aaaaaa 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #bbbbbb 0%,#a5a5a5 40%,#aaaaaa 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbbbbb', endColorstr='#aaaaaa',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0px 0px 5px #000, 0px -2px 1px #AAA inset;
+}
+
 footer {
 	border-top: 1px solid #c1c1c1;
 	background: #ddd;

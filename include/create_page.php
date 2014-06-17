@@ -68,7 +68,7 @@ function html_end()
 {
 	echo "    </div>\r\n";
 	if($_SESSION['header']==0) {
-		echo "    <script type='text/javascript'>headerHeightToogle(10);</script>";
+		echo "    <script type='text/javascript'>headerHeightToogle(0);</script>";
 	}
 	echo "</body>\r\n";
 	echo "</html>\r\n";

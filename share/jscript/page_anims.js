@@ -2,14 +2,10 @@ var headerPresent = 1;
 
 function headerToogle(duration) {
 		if (headerPresent==1) {
-			$('header').slideToggle(duration)
-			$('header p').slideToggle(duration)
-			$('header img').slideToggle(duration)
+			$('header').slideToggle(duration);
+			$('header p').slideToggle(duration);
+			$('header img').slideToggle(duration);
 			$( "nav" ).animate({marginTop: 0}, duration);
-			$( "nav" ).rotate({
-				duration:duration,
-	 			animateTo:0
-			});
 			$( "#arrow" ).rotate({
 				duration:duration,
 				angle: 180,
@@ -17,24 +13,13 @@ function headerToogle(duration) {
 			});
 			$('nav').css({position: "fixed"});
 			headerPresent = 0;
+			$('nav').addClass("smallNav");
 		}
 		else {
-			$('header').slideToggle(duration)
-			$('header p').slideToggle(duration)
-			$('header img').slideToggle(duration)
+			$('header').slideToggle(duration);
+			$('header p').slideToggle(duration);
+			$('header img').slideToggle(duration);
 			$( "nav" ).animate({marginTop: "-14px"}, duration);
-			if ($(document).width()>1400) {
-				$( "nav" ).rotate({
-					duration:duration,
-		 			animateTo:-0.5
-				});
-			}
-			else {
-				$( "nav" ).rotate({
-					duration:duration,
-		 			animateTo:-1
-				});
-			};
 			$( "#arrow" ).rotate({
 				duration:duration,
 				angle: 0,
@@ -42,6 +27,7 @@ function headerToogle(duration) {
 			});
 			$('nav').css({position: "absolute"});
 			headerPresent = 1;
+			$('nav').removeClass("smallNav");
 		};
 		$.get("include/session.php?header_update="+headerPresent);
 }

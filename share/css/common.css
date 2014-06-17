@@ -115,6 +115,29 @@ nav #arrow:hover {
 	border-bottom: none;
 }
 
+.smallNav {
+	transform: rotate(0deg) !important;
+	-webkit-transform: rotate(0deg) !important;
+	-moz-transform: rotate(0deg) !important; 
+	-o-transform: rotate(0deg) !important;
+	-ms-transform: rotate(0deg) !important;
+	height: 32px;
+}
+
+.smallNav ul {
+	height: 32px;
+}
+
+.smallNav li {
+	height: 24px;
+}
+
+.smallNav #arrow {
+	height: 24px;
+	width: 24px;
+}
+
+
 #content {
 	z-index: 10;
 	position: relative;
